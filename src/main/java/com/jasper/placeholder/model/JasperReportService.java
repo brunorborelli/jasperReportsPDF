@@ -30,11 +30,7 @@ public class JasperReportService {
     public static final String IMAGEBG = "classpath:jasperReports/img/jasper-img.png";
     public static final String ARQUIVOJRXML = "cert.jrxml";
 
-    public static final String DESTINOPDF = "C:\\jasper-report";
-
-
-
-    public void gerar(Aluno aluno) throws IOException {
+    public byte[] gerar(Aluno aluno) throws IOException {
 
         byte[] imagebg = this.loadImage(IMAGEBG);
 
@@ -48,13 +44,11 @@ public class JasperReportService {
 
         String pathAbsolute = getAbsolutePath();
         try{
-            String folderDiretorio = getDiretorioSave("certificados-salvos");
             JasperReport report = JasperCompileManager.compileReport(pathAbsolute);
             LOGGER.info("report compilado: {}", pathAbsolute);
             JasperPrint print = JasperFillManager.fillReport(report, params,new JREmptyDataSource());
             LOGGER.info("Jasper print");
-            JasperExportManager.exportReportToPdfFile(print,folderDiretorio);
-            LOGGER.info("PDF EXPORTADO PARA: {}", folderDiretorio);
+            return JasperExportManager.exportReportToPdf(print);
         } catch (JRException e) {
             throw new RuntimeException(e);
         }
@@ -67,18 +61,6 @@ public class JasperReportService {
             return IOUtils.toByteArray(inputStream);
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
-    }
-
-    private String getDiretorioSave(String name) {
-        this.createDiretorio(name);
-        return DESTINOPDF+name.concat(".pdf");
-    }
-
-    private void createDiretorio(String name) {
-        File dir = new File(name);
-        if(!dir.exists()){
-            dir.mkdir();
         }
     }
 
