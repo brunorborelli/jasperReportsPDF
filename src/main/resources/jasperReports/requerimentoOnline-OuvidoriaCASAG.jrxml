@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d56263bc-e606-40ae-ae3e-9c4a5eb97a9e">
+	<subDataset name="Empty Dataset1" uuid="11b324fc-d44d-4314-8a6f-6970111b7694"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement x="0" y="120" width="280" height="40" backcolor="#A39D9D" uuid="1fed5867-163b-4182-a972-b7c1576f7ee1"/>
+			</rectangle>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="10" y="120" width="80" height="30" uuid="56ef8634-83a8-4fea-9021-bae9d674f814"/>
+				<textElement markup="none">
+					<font fontName="SansSerif" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["NOME"]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="280" y="120" width="280" height="40" backcolor="#A39D9D" uuid="147fb07a-f3b0-443b-9e4b-fc13ad6bd115"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="280" y="160" width="280" height="40" backcolor="#FFFFFF" uuid="d885a0c5-d0e8-407a-a812-4b909cf84f71"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="160" width="280" height="40" backcolor="#FFFFFF" uuid="02455b87-f25c-44cb-b65b-54b6bef55dc0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="200" width="280" height="40" backcolor="#A39D9D" uuid="2afaddd1-822b-4230-ac57-19d74ad8061b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="280" y="200" width="280" height="40" backcolor="#A39D9D" uuid="47194aea-eec5-46c9-a289-a93cc6cbc11c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="240" width="280" height="40" backcolor="#FFFFFF" uuid="aec0e87f-dfc1-4f1d-b51e-58fd56fb0372"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="280" y="240" width="280" height="40" backcolor="#FFFFFF" uuid="2a179730-06ea-4143-8c52-d8cc13b3437f"/>
+			</rectangle>
+			<textField>
+				<reportElement x="290" y="120" width="100" height="30" uuid="5f3ad348-ab08-4f39-87cc-50834e08d5e3"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["CPF"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="200" width="100" height="30" uuid="d4117d51-af77-44b3-9b33-b0a1fe1d0eab"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["CELULAR"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="205" width="100" height="30" uuid="852829b0-a0fe-4841-a423-ba39721903b3"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["E-MAIL"]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="350" width="560" height="40" backcolor="#A39D9D" uuid="32d00d43-ff89-4901-a0a4-09d381c3e362"/>
+			</rectangle>
+			<textField>
+				<reportElement x="10" y="355" width="260" height="30" uuid="5b7ca4a7-e29d-4189-93de-fd89d237b5b5"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["RELATO DOS FATOS"]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="390" width="560" height="130" backcolor="#FFFFFF" uuid="139fa3db-c7d2-49b9-bf0a-5b541cb65229"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="600" width="560" height="100" backcolor="#FFFFFF" uuid="167dbc49-f383-47bb-bd96-d28ee840ca84"/>
+			</rectangle>
+			<textField>
+				<reportElement x="42" y="610" width="470" height="30" uuid="c940c479-9696-4565-984b-e8697ae297d0"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["POR SER VERDADE O ACIMA EXPOSTO, DATO E ASSINO O PRESENTE."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="640" width="60" height="30" uuid="6fffed28-6aa6-439a-88b6-5acce6b4b827"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Goiânia,"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="640" width="30" height="30" uuid="c64cf664-db9e-44e9-ac11-b0ebdd525b54"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["de"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="640" width="30" height="30" uuid="e8d1722e-a582-4fa3-ad4c-4827ebcd4b49"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["de"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="680" width="360" height="30" uuid="f9f08ec9-4559-459b-a625-7f2467d4244d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ASSINATURA: ________________________________________"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
